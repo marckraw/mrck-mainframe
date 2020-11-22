@@ -14,21 +14,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3c1ba1-220a-4f52-b541-48a4e4ba975d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/pre-rendering.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/posts/ssg-ssr.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/utils.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/posts/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/posts/using-swr.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/posts/first-post.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/posts" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -74,7 +67,7 @@
       <workItem from="1606077669034" duration="364000" />
       <workItem from="1606079209316" duration="2000" />
       <workItem from="1606079225584" duration="292000" />
-      <workItem from="1606079587506" duration="3721000" />
+      <workItem from="1606079587506" duration="4696000" />
     </task>
     <servers />
   </component>
@@ -106,9 +99,9 @@
       <screen x="0" y="25" width="3008" height="1667" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.25.3008.1667/-2048.25.2048.1255@0.25.3008.1667" timestamp="1606080528833" />
-    <state x="1169" y="412" width="670" height="676" key="search.everywhere.popup" timestamp="1606085581119">
+    <state x="1169" y="412" width="670" height="676" key="search.everywhere.popup" timestamp="1606085893005">
       <screen x="0" y="25" width="3008" height="1667" />
     </state>
-    <state x="1169" y="412" width="670" height="676" key="search.everywhere.popup/0.25.3008.1667/-2048.25.2048.1255@0.25.3008.1667" timestamp="1606085581119" />
+    <state x="1169" y="412" width="670" height="676" key="search.everywhere.popup/0.25.3008.1667/-2048.25.2048.1255@0.25.3008.1667" timestamp="1606085893005" />
   </component>
 </project>
