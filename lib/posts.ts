@@ -19,14 +19,11 @@ const postsDirectory = path.join(process.cwd(), 'posts')
 //     return databaseClient.query('SELECT posts...')
 // }
 
-
-
 export function getSortedPostsData() {
     // Instead of the file system,
     // fetch post data from an external API endpoint
     // const res = await fetch('..')
     // return res.json()
-
 
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory)
@@ -48,7 +45,7 @@ export function getSortedPostsData() {
         }
     })
     // Sort posts by date
-    return allPostsData.sort((a, b) => {
+    return allPostsData.sort((a: any, b: any) => {
         if (a.date < b.date) {
             return 1
         } else {
