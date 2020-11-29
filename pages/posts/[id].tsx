@@ -1,11 +1,15 @@
-import {GetStaticProps} from 'next'
-import Head from "next/head";
+import {GetStaticPaths, GetStaticProps} from 'next'
+import Head from 'next/head'
 import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts'
-import Date from "../../components/date";
+import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.scss'
 
-export default function Post({postData}) {
+interface PostProps {
+    postData: any
+}
+
+export default function Post({postData}: PostProps): JSX.Element {
     return (
         <Layout home={false}>
             <Head>{postData.title}</Head>
@@ -20,7 +24,7 @@ export default function Post({postData}) {
     )
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllPostIds()
     return {
         paths,
@@ -29,7 +33,7 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
-    const postData = await getPostData(params.id)
+    const postData = await getPostData(params.id as string) // this is weird...
     return {
         props: {
             postData

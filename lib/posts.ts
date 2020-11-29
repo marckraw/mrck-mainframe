@@ -4,6 +4,22 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 
+export interface PostData {
+  [p: string]: any;
+  id: string;
+  contentHtml: string
+}
+
+export interface PostId {
+    id: string,
+}
+
+export interface PostIds {
+    params: {
+        id: string
+    }
+}
+
 const postsDirectory = path.join(process.cwd(), 'posts')
 
 /*
@@ -19,7 +35,7 @@ const postsDirectory = path.join(process.cwd(), 'posts')
 //     return databaseClient.query('SELECT posts...')
 // }
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): PostId[] {
     // Instead of the file system,
     // fetch post data from an external API endpoint
     // const res = await fetch('..')
@@ -54,7 +70,7 @@ export function getSortedPostsData() {
     })
 }
 
-export function getAllPostIds() {
+export function getAllPostIds():  PostIds[] {
     const fileNames = fs.readdirSync(postsDirectory)
 
     // Returns an array that looks like this:
@@ -79,7 +95,7 @@ export function getAllPostIds() {
     })
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string): Promise<PostData> {
     const fullPath = path.join(postsDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
