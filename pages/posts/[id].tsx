@@ -1,3 +1,4 @@
+import {GetStaticProps} from 'next'
 import Head from "next/head";
 import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts'
@@ -6,7 +7,7 @@ import utilStyles from '../../styles/utils.module.scss'
 
 export default function Post({postData}) {
     return (
-        <Layout>
+        <Layout home={false}>
             <Head>{postData.title}</Head>
             <article>
                 <h1 className={utilStyles.headingXl}>{postData.title}</h1>
@@ -27,7 +28,7 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({params}) {
+export const getStaticProps: GetStaticProps = async ({params}) => {
     const postData = await getPostData(params.id)
     return {
         props: {
