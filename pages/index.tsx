@@ -6,7 +6,11 @@ import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import {getSortedPostsData} from '../lib/posts'
 
-export default function Home({allPostsData}) {
+interface HomeProps {
+    allPostsData: any
+}
+
+export default function Home({allPostsData}: HomeProps): JSX.Element {
     return (
         <Layout home>
             <Head>

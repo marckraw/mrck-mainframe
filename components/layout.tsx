@@ -3,10 +3,15 @@ import Link from 'next/link'
 import styles from './layout.module.scss'
 import utilStyles from '../styles/utils.module.scss'
 
-const name = 'Marcin Krawczyk'
+const name = 'mrck'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({children, home}) {
+interface LayoutProps {
+    children: JSX.Element[]
+    home: boolean
+}
+
+export default function Layout({children, home}: LayoutProps): JSX.Element {
     return (
         <div className={styles.container}>
             <Head>
