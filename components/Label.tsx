@@ -1,6 +1,6 @@
 interface LabelProps {
     name: string,
-    type: string,
+    type?: string,
 }
 
 const style = ({type}) => ({

@@ -4,7 +4,7 @@ import Layout from '../../components/layout'
 import Label from '../../components/Label'
 
 interface TasksIndexProps {
-    dupa: string
+    dupa?: string
 }
 
 export default function TasksIndex(props: TasksIndexProps): JSX.Element {
